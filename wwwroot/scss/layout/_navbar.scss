@@ -1,0 +1,139 @@
+header{
+    height: auto;
+}
+.nav_info{
+    height: 40px;
+    background-color: rgb(16,110,234);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.nav_info_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav_info_contact{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+    i{
+        margin-right: 4px;
+    }
+}
+.nav_info_mail,.nav_info_num{
+    cursor: pointer;
+}
+.nav_info_social{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    a{
+        color: #fff;
+    }
+}
+@media screen and (max-width:768px) {
+    .nav_info_social{
+        display: none;
+    }
+    .nav_info_box{
+        justify-content: center;
+    }
+}
+
+nav{
+    height: 86px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.nav_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    a{
+        transition: 300ms;
+        &:hover{
+            color:rgb(16,110,234) ;
+        }
+    }
+}
+@media screen and (max-width:850px) {
+    .nav_box{
+        ul{
+            display: none;
+        }
+    }
+}
+.nav_logo{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    span{
+        font-size: 30px;
+        color:#106eea;
+    }
+}
+// Mobil navbar
+.nav_mob_btn{
+    font-size: 30px;
+    display: none;
+}
+@media screen and (max-width:850px) {
+    .nav_mob_btn{
+        display: block;
+        cursor: pointer;
+    }
+}
+.mob_bg{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.nav_mob_box{
+    display: none;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .nav_mob_close{
+        cursor: pointer;
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: -50px;
+        right: 0px;
+    }
+}

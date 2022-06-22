@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+a,li,ul,ol{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+    }
+}
+p{
+    margin: 0;
+}

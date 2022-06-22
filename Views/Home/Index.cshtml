@@ -1,0 +1,68 @@
+﻿@using Web.ViewModels 
+@model HomeViewModel; 
+ <!-- MAIN START -->
+    <main>
+        <!-- Welcome Section START -->
+        <section class="welcome_to_bizland">
+            <div class="welcome_box my_container">
+                <h1>Welcome to <span>BizLand</span></h1>
+                <p>We are team of talented designers making websites with Bootstrap</p>
+                <div class="welcome_box_btns">
+                    <div class="welcome_box_btns_get"><a href="#">GET STARTED</a></div>
+                    <div class="welcome_box_btns_watch"><a href="#">Watch Video</a></div>
+                </div>
+            </div>
+        </section>
+        <!-- Welcome Section END -->
+        <!-- AboutUs Section START -->
+        <section class="about_us">
+            <div class="about_us_box my_container">
+                <div class="about_us_mini_header">ABOUT</div>
+                <h3 class="about_us_header">Find Out More <span>About Us</span></h3>
+                <div class="about_us_header_content">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</div>
+                <div class="about_us_img_box">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/about.jpg" alt="">
+                    <div class="about_us_mini_box">
+                        <h3 class="about_us_mini_box_header">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        <p class="about_us_mini_box_top_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="about_us_mini_box_card">
+                            <img src="" alt="">
+                            <div>
+                                <h4>Ullamco laboris nisi ut aliquip consequat</h4>
+                                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                            </div>
+                        </div>
+                        <div class="about_us_mini_box_card">
+                            <img src="" alt="">
+                            <div>
+                                <h4>Magnam soluta odio exercitationem reprehenderi</h4>
+                                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                            </div>
+                        </div>
+                        <p class="about_us_mini_box_bottom_content">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- AboutUs Section END -->
+         <!-- Our Hardworking Team Section START -->
+        <section class="team">
+           <div class="team_box my_container">
+                <div class="team_box_mini_header">@Model.Settings.OurTeamMiniHeader</div>
+                <h3 class="team_box_header">Our Hardworking <span>Team</span></h3>
+                <div class="team_box_content">@Model.Settings.OurTeamContent</div>
+                <div class="team_box_card_box">
+                    @foreach (var card in Model.ourTeamCards)
+                    {
+                         <div class="team_box_card">
+                            <img src="@card.Url" alt="foto">
+                            <h4 class="team_box_card_name">@card.Name</h4>
+                            <p class="team_box_card_title">@card.Title</p>
+                        </div>
+                    }
+                </div>
+           </div>
+        </section>
+         <!-- Our Hardworking Team Section END -->
+    </main>
+    <!-- MAIN END -->

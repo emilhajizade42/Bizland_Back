@@ -1,0 +1,31 @@
+footer{
+    min-height: 30vh;
+}
+.join{
+    background-color: #f1f6fe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-weight: 600;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    form{
+        margin: 20px 0;
+        margin-bottom: 40px;
+    }
+    input{
+        height: 100%;
+    }
+    button{
+        color: #f1f6fe;
+        background-color: blue;
+        padding: 4px;
+        border: 0;
+        border-radius: 5px;
+    }
+
+}
